@@ -21,6 +21,7 @@ smart-vision-analyzer/
 |-- color_detector1.py   # Main application
 |-- colors.csv           # Color names and RGB reference values
 |-- yolov8n.pt           # YOLOv8 nano model weights
+|-- requirements.txt     # Python dependencies
 `-- README.md
 ```
 
@@ -61,7 +62,7 @@ Install the dependencies:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install opencv-python numpy pandas gradio ultralytics matplotlib pillow
+python -m pip install -r requirements.txt
 ```
 
 ## Running the application
@@ -97,7 +98,7 @@ Open [http://127.0.0.1:7860](http://127.0.0.1:7860) in your browser and allow ca
 You can run the virtual environment without activating it:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install opencv-python numpy pandas gradio ultralytics matplotlib pillow
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe color_detector1.py
 ```
 
